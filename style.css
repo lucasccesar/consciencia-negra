@@ -1,0 +1,68 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background-color: rgb(8, 7, 7);
+    color: white;
+}
+
+h1{
+    position: relative;
+    animation: slider 4s infinite;
+    width: fit-content;
+    transition-timing-function: linear;
+}
+
+h2{
+    text-align: center;
+    animation: piscar 2s infinite;
+}
+
+main div{
+    display: flex;
+    width: 70vw;
+    margin: auto;
+}
+
+img{
+    animation: girar 5s infinite;
+}
+
+p{
+    font-size: 25px;
+}
+
+@keyframes girar{
+    from {
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg
+    }
+}
+
+@keyframes piscar{
+    0%{
+        font-size: 25px;
+    }
+    50%{
+        font-size: 30px;
+    }
+    100%{
+        font-size: 25px;
+    }
+}
+
+@keyframes slider {
+    0%{
+        left: 30%;
+    }
+    50%{
+        left: 60%;
+    }
+    100%{
+        left: 30%;
+    }
+}
